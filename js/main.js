@@ -1,9 +1,8 @@
-(function () {	
+$( document ).ready(function() {
 
-	$(".video-container>a").on("click",function(e){
-		e.preventDefault();
+	$("a").on("click",function(e){
 		alert("event propagation canceled");
-		
+		e.preventDefault();
 	});
 
-} ());
+});
